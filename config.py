@@ -3,6 +3,6 @@ DEBUG = True
 USERNAME = 'root'
 PASSWORD = '12345678'
 SERVER = 'localhost'
-DB = 'bd'
+DB = 'database'
 
 SQLALCHEMY_DATABASE_URI = f'mysql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}'
