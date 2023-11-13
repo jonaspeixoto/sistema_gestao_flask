@@ -1,5 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, EmailField, DateField, SelectField
+import email_validator
 from wtforms.validators import DataRequired, Email
 
 class ClienteForm(FlaskForm):
