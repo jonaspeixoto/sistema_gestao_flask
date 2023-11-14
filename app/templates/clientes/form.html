@@ -13,30 +13,59 @@
         <div class="form-group">
             <label> Nome</label>
             {{form.nome(class="form-control")}}
+
         </div>
+        {% if form.errors.nome %}
+            <div class="alert alert-danger">
+                {{form.errors.nome}}
+            </div>
+
+        {% endif %}
         <br>
         <div class="form-group">
             <label> Email</label>
             {{form.email(class="form-control")}}
+
         </div>
+        {% if form.errors.Email %}
+            <div class="alert alert-danger">
+                {{form.errors.Email}}
+            </div>
+        {% endif %}
         <br>
 
         <div class="form-group">
             <label> Data_nascimento</label>
             {{form.data_nascimento(class="form-control")}}
         </div>
+
+        {% if form.errors.Data_nascimento %}
+        <div class="alert alert-danger">
+            {{form.errors.Data_nascimento}}
+        </div>
+        {% endif %}
         <br>
         
         <div class="form-group">
             <label> Profissao</label>
             {{form.profissao(class="form-control")}}
         </div>
+        {% if form.errors.profissao %}
+        <div class="alert alert-danger">
+            {{form.errors.profissao}}
+        </div>
+        {% endif %}
         <br>
 
         <div class="form-group">
             <label> Sexo</label>
             {{form.sexo(class="form-control")}}
         </div>
+        {% if form.errors.Sexo %}
+        <div class="alert alert-danger">
+            {{form.errors.Sexo}}
+        </div>
+        {% endif %}
         <br>
 
         <button class="btn btn-primary">Cadastrar</button>
